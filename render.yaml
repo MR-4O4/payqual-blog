@@ -33,7 +33,7 @@ services:
       envVarKey: MYSQL_PASSWORD
 
 - type: pserv
-  name: ghost-mysql
+  name: mysql-ghost
   repo: https://github.com/render-examples/mysql.git
   plan: standard
   env: docker
