@@ -16,6 +16,8 @@ services:
       name: mysql-ghost
       type: pserv
       property: host
+  - key: database__connection__port
+    value: 3306
   - key: database__connection__database
     fromService:
       name: mysql-ghost
@@ -39,7 +41,7 @@ services:
   env: docker
   autoDeploy: false
   disk:
-    name: mysql-ghost
+    name: mysql
     mountPath: /var/lib/mysql
     sizeGB: 10
   envVars:
