@@ -18,7 +18,7 @@ services:
       property: host
   - key: database__connection__database
     fromService:
-      name: ghost-mysql
+      name: mysql-ghost
       type: pserv
       envVarKey: MYSQL_DATABASE
   - key: database__connection__user
