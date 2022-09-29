@@ -2,6 +2,7 @@ services:
 - type: web
   name: ghost
   env: docker
+  region: frankfurt
   plan: starter
   autoDeploy: false
   disk:
@@ -39,6 +40,7 @@ services:
   repo: https://github.com/render-examples/mysql.git
   plan: starter
   env: docker
+  region: frankfurt
   autoDeploy: false
   disk:
     name: mysql
